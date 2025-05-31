@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 42%, rgba(0, 212, 255, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.currency-row {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+.currency-input {
+    flex: 2;
+}
+
+.currency-select {
+    flex: 1;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #c0c0c0;
+    background: #f8f9fa;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 12px;
+    color: #555;
+    font-weight: 600;
+    text-align: left;
+}
+
+.converter-btn {
+    background: linear-gradient(45deg, #090979, #00D4FF);
+    color: #fff;
+    border: none;
+    padding: 15px 120px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 13px;
+    transition: all 0.3s ease;
+}
+
+.converter-btn:hover {
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    translate: translateY(-2px);
+}
+
+.loading {
+    margin: 20px;
+}
+
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #090979;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    animation: spin 0.5s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+    
+}
+.info {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #665;
+}
