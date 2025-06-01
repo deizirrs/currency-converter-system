@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 42%, rgba(0, 212, 255, 1) 100%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 42%, rgba(0, 212, 255, 1) 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -55,14 +55,14 @@ select {
     border: 2px solid #c0c0c0;
     background: #f8f9fa;
     border-radius: 12px;
-    font-size: 16px;
+    font-size: 15px;
     transition: all 0.3s ease;
 }
 
 input:focus,
 select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #34349b;
     background: #fff;
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
     transform: translateY(-2px);
@@ -77,7 +77,7 @@ label {
     text-align: left;
 }
 
-.converter-btn {
+.converterBtn {
     background: linear-gradient(45deg, #090979, #00D4FF);
     color: #fff;
     border: none;
@@ -88,16 +88,19 @@ label {
     align-items: center;
     cursor: pointer;
     margin-top: 13px;
+    display: inline-block;
     transition: all 0.3s ease;
+
 }
 
-.converter-btn:hover {
+.converterBtn:hover {
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
     translate: translateY(-2px);
 }
 
 .loading {
     margin: 20px;
+    display: none;
 }
 
 .spinner {
@@ -108,16 +111,41 @@ label {
     width: 30px;
     margin: 0 auto;
     animation: spin 0.5s linear infinite;
-    display: none;
+
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
-    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
+
 .info {
     margin-top: 30px;
     font-size: 14px;
     color: #665;
+}
+
+.result {
+    background: linear-gradient(45deg, #1d309b 0%, #66753e 100%);
+    padding: 20px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 12px;
+    display: none;
+}
+
+.error {
+    background: linear-gradient(45deg, #943577, #f70505);
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: none;
 }
