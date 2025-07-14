@@ -1,4 +1,4 @@
-# 💸 DzDev Conversor
+# 💸 DCode Conversor 💸
 
 O **DzDev Conversor** é um conversor de moedas simples e moderno, desenvolvido com **HTML**, **CSS** e **JavaScript**, que consome dados em tempo real de uma API de câmbio. Ideal para quem deseja converter valores entre diferentes moedas de forma rápida e prática.
 
